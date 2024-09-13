@@ -1,5 +1,5 @@
 import React from "react";
-import background from "./assets/flanker-lee-naeD-4ShjG0-unsplash.jpg";
+import background from "./assets/background.jpg";
 import Login from "./components/Login";
 
 function App() {
@@ -7,13 +7,16 @@ function App() {
     <div className="flex h-screen">
       {/* bg at left */}
       <div
-        className="sm:basis-0 lg:basis-9/12 bg-cover bg-center"
-        style={{ backgroundImage: `url(${background})` }}
+        className="sm:basis-0 lg:basis-[68%] bg-cover transform scale-x-[-1]"
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundPosition: `-10% 80%`,
+        }}
       >
       </div>
 
       {/* login at right */}
-      <div className="w-full sm:basis-full lg:basis-3/12 flex items-center justify-center bg-white">
+      <div className="w-full sm:basis-full lg:basis-[32%] flex items-center justify-center bg-white">
         <Login />
       </div>
     </div>

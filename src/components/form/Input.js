@@ -10,17 +10,17 @@ const Input = (props) => {
   };
 
   return (
-    <div className="space-y-[-0.5rem] lg:space-y-6 relative">
+    <div className="space-y-[-0.5rem] lg:space-y-0 relative">
 
       {/* input label */}
-      <label htmlFor={props.name} className="hidden lg:block ms-3 text-sm font-medium text-gray-700">
+      <label htmlFor={props.name} className="mb-1 hidden lg:block ms-3 text-sm font-medium text-gray-700">
         {props.title}
       </label>
 
       {/* input props */}
       <input
         type={props.type === "password" && showPassword ? "text" : props.type}
-        className={props.className + " mt-0 lg:mt-1 w-full h-12 px-3 py-2 border rounded-md sm:text-base focus:outline-none bg-gray-100"}
+        className={props.className + " lg:mt-1 w-full h-12 px-3 py-2 border rounded-md sm:text-base focus:outline-none bg-gray-100"}
         id={props.name}
         name={props.name}
         placeholder={props.placeholder}

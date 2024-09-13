@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Input from "./form/Input";
 import Toggle from "./form/Toggle"
-import logo from "../assets/Colorful_Sunset-removebg-preview.png"
-import googleLogo from "../assets/favpng_google-logo-google-search-icon.png"
+import logo from "../assets/logo.png"
+import googleLogo from "../assets/googleLogo.png"
 
 const Login = () => {
     const [rememberMe, setRememberMe] = useState(false);
 
     return (
-        <div className="h-full lg:h-auto w-full max-w-md p-4 space-y-6">
-            {/* logo and brand name */}
+        <div className="h-full lg:h-auto w-full max-w-[32rem] p-4 space-y-6">
+            {/* logo and brand name for large displays*/}
             <div className="justify-start hidden lg:flex">
                 <img src={logo} alt="Logo" className="mb-6 size-14" />
                 <h1 className="ms-4 mt-3 font-bold text-2xl">Generic Corp.</h1>
@@ -48,7 +48,7 @@ const Login = () => {
                     />
                     <div className="text-sm">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a href="#" className="font-medium text-[#007aff] hover:text-[#007aff]">
+                        <a href="#" className="font-medium text-[#007aff]">
                             Forgot password?
                         </a>
                     </div>
@@ -57,7 +57,7 @@ const Login = () => {
                 {/* sign in button */}
                 <input
                     type="button"
-                    className="cursor-pointer h-11 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-base font-bold text-white bg-[#007aff] hover:bg-[#257fe0de] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#007aff]"
+                    className="transition delay-[10ms] cursor-pointer h-11 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-base font-bold text-white bg-[#007aff] hover:bg-[#257fe0de] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#007aff]"
                     value="Sign in"
                 />
             </form>
@@ -70,7 +70,7 @@ const Login = () => {
             <div>
                 <button
                     type="button"
-                    className="h-11 w-full inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-base font-medium text-white bg-neutral-700 hover:bg-gray-50"
+                    className="transition delay-[10ms] h-11 w-full inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-base font-medium text-white bg-neutral-700 hover:bg-neutral-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4b4b4b]"
                 >
                     <img src={googleLogo} alt="Google Icon" className="mr-2 size-6" />
                     Or sign in with Google
@@ -81,8 +81,14 @@ const Login = () => {
             <div className="text-center text-sm">
                 <p>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    Don't have an account? <a href="#" className="font-medium text-[#007aff] hover:text-[#0062cc]">Sign up now</a>
+                    Don't have an account?<a href="#" className="ms-1 font-medium text-[#007aff] hover:text-[#0062cc]">Sign up now</a>
                 </p>
+            </div>
+
+            {/* logo and brand name for small displays*/}
+            <div className="pt-12 justify-center flex lg:hidden">
+                <img src={logo} alt="Logo" className="mb-6 size-14" />
+                <h1 className="ms-4 mt-3 font-bold text-2xl">Generic Corp.</h1>
             </div>
 
         </div>
