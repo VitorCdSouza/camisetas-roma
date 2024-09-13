@@ -11,12 +11,16 @@ const Input = (props) => {
 
   return (
     <div className="relative">
+
+      {/* input label */}
       <label htmlFor={props.name} className="ms-3 block text-sm font-medium text-gray-700">
         {props.title}
       </label>
+
+      {/* input props */}
       <input
         type={props.type === "password" && showPassword ? "text" : props.type}
-        className={props.className + " mt-1 w-full h-12 px-3 py-2 border rounded-md sm:text-sm"}
+        className={props.className + " mt-1 w-full h-12 px-3 py-2 border rounded-md sm:text-base focus:outline-none bg-gray-100"}
         id={props.name}
         name={props.name}
         placeholder={props.placeholder}
@@ -25,6 +29,7 @@ const Input = (props) => {
         value={props.value}
       />
 
+      {/* input password logic */}
       {props.type === "password" && (
         <div
           className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
@@ -37,6 +42,7 @@ const Input = (props) => {
           )}
         </div>
       )}
+
     </div>
   );
 };
