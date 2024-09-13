@@ -10,17 +10,17 @@ const Input = (props) => {
   };
 
   return (
-    <div className="relative">
+    <div className="space-y-[-0.5rem] lg:space-y-6 relative">
 
       {/* input label */}
-      <label htmlFor={props.name} className="ms-3 block text-sm font-medium text-gray-700">
+      <label htmlFor={props.name} className="hidden lg:block ms-3 text-sm font-medium text-gray-700">
         {props.title}
       </label>
 
       {/* input props */}
       <input
         type={props.type === "password" && showPassword ? "text" : props.type}
-        className={props.className + " mt-1 w-full h-12 px-3 py-2 border rounded-md sm:text-base focus:outline-none bg-gray-100"}
+        className={props.className + " mt-0 lg:mt-1 w-full h-12 px-3 py-2 border rounded-md sm:text-base focus:outline-none bg-gray-100"}
         id={props.name}
         name={props.name}
         placeholder={props.placeholder}
@@ -36,9 +36,9 @@ const Input = (props) => {
           onClick={togglePasswordVisibility}
         >
           {showPassword ? (
-            <EyeOffIcon className="mt-5 h-5 w-5 text-gray-500" />
+            <EyeOffIcon className="mt-1 lg:mt-5 h-5 w-5 text-gray-500" />
           ) : (
-            <EyeIcon className="mt-5 h-5 w-5 text-gray-500" />
+            <EyeIcon className="mt-1 lg:mt-5 h-5 w-5 text-gray-500" />
           )}
         </div>
       )}

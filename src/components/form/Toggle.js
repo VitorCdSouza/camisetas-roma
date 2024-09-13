@@ -1,6 +1,6 @@
 const Toggle = ({ label, checked, onChange }) => {
     return (
-      <label className="flex items-center cursor-pointer">
+      <label className="space-y-[-0.5rem] lg:space-y-0 flex items-center cursor-pointer">
 
         {/* checkbox used for toggle and it's props */}
         <input

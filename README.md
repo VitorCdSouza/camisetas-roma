@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# Projeto realizado como teste para estágio front end
+
+> Obs.: comentários e commits feitos em inglês
+
+## Link descrição do projeto: https://github.com/camisetasroma/estagio-front
+
+## Como rodar
+
+
+## Ferramentas usadas:
+
+- Reactjs
+- Tailwind
+
+## Decisões e como pensei:
+
+### Para telas maiores:
+Dividi a tela em duas divs, uma contendo a imagem e outra o formulário, ambas com propriedade "basis" para especificação de largura, e sua parent div com h-screen para preenchimento total da tela 
+
+### Para telas menores:
+Dividi a tela em duas divs, uma contendo a imagem e outra o formulário, ambas com propriedade "basis" para especificação de largura, e sua parent div com h-screen para preenchimento total da tela 
+
+### Desenvolvimento do formulário:
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -8,18 +8,19 @@ const Login = () => {
     const [rememberMe, setRememberMe] = useState(false);
 
     return (
-        <div className="w-full max-w-md p-8 space-y-6">
+        <div className="h-full lg:h-auto w-full max-w-md p-4 space-y-6">
             {/* logo and brand name */}
-            <div className="flex justify-start">
+            <div className="justify-start hidden lg:flex">
                 <img src={logo} alt="Logo" className="mb-6 size-14" />
                 <h1 className="ms-4 mt-3 font-bold text-2xl">Generic Corp.</h1>
             </div>
 
             {/* welcome message */}
             <h2 className="text-2xl font-semibold">Nice to see you again</h2>
+            <div className="h-0.5 block lg:hidden" />
 
             {/* login form it self */}
-            <form className="mt-8 space-y-6">
+            <form className="space-y-6">
 
                 {/* login fields */}
                 <Input
@@ -56,16 +57,20 @@ const Login = () => {
                 {/* sign in button */}
                 <input
                     type="button"
-                    className="h-11 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-base font-bold text-white bg-[#007aff] hover:bg-[#257fe0de] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#007aff]"
+                    className="cursor-pointer h-11 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-base font-bold text-white bg-[#007aff] hover:bg-[#257fe0de] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#007aff]"
                     value="Sign in"
                 />
             </form>
+            
+            <div className="h-1 hidden lg:flex"></div>
+            <hr />
+            <div className="h-1 hidden lg:flex"></div>
 
             {/* sign in with google button */}
             <div>
                 <button
                     type="button"
-                    className="h-11 mt-12 w-full inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-base font-medium text-white bg-neutral-700 hover:bg-gray-50"
+                    className="h-11 w-full inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-base font-medium text-white bg-neutral-700 hover:bg-gray-50"
                 >
                     <img src={googleLogo} alt="Google Icon" className="mr-2 size-6" />
                     Or sign in with Google
