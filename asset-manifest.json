@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/camisetas-roma/static/css/main.76d8e00b.css",
+    "main.js": "/camisetas-roma/static/js/main.d9abe91a.js",
+    "static/media/background.jpg": "/camisetas-roma/static/media/background.1d720f04750e3476b61d.jpg",
+    "static/media/logo.png": "/camisetas-roma/static/media/logo.93f1d6ca230d9f27e42b.png",
+    "static/media/googleLogo.png": "/camisetas-roma/static/media/googleLogo.c05c3879fa560c35b977.png",
+    "index.html": "/camisetas-roma/index.html",
+    "main.76d8e00b.css.map": "/camisetas-roma/static/css/main.76d8e00b.css.map",
+    "main.d9abe91a.js.map": "/camisetas-roma/static/js/main.d9abe91a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76d8e00b.css",
+    "static/js/main.d9abe91a.js"
+  ]
+}
