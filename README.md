@@ -8,7 +8,9 @@
 > necessário npm e editor de texto pré instalado
 1. Clone ou baixe esse repositório;
 2. Baixe scripts do react: ```npm install react-scripts```
-3. Rode ```npm start```
+3. Rode ```npm install```
+4. Rode ```npm start```
+Pronto
 
 ## Ferramentas usadas:
 
