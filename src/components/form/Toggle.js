@@ -11,7 +11,7 @@ const Toggle = ({ label, checked, onChange }) => {
         />
         
         {/* transition and small transition */}
-        <div className={`relative w-10 h-6 bg-gray-200 rounded-full transition duration-300 ${checked ? "bg-[#007aff]" : ""}`}>
+        <div className={`relative w-10 h-6 rounded-full transition duration-300 ${checked ? "bg-[#007aff]" : "bg-gray-200"}`}>
           <div
             className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform duration-300 transform ${checked ? "translate-x-4" : ""}`}
           ></div>
