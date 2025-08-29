@@ -1,5 +1,3 @@
-# Projeto realizado como teste para estágio front end
-
 > Obs.: comentários e commits feitos em inglês
 
 ## Link descrição do projeto: https://github.com/camisetasroma/estagio-front
